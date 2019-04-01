@@ -79,7 +79,8 @@ public class DeserializerTest {
     }
 
     @Test(expected = IncorrectJsonException.class)
-    public void ifIncorrectJson_Then(){
+    public void ifIncorrectJson_ThenException(){
+        String str =  null;
         String  json = null;
         json = IOUtils.readJsonFromFile("src/main/res/raw/test_chart_data3.json");
 
