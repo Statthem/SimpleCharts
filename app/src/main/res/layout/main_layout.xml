@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <e.alex.simplecharts.MyScrollView
+        android:id="@+id/MyScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
+        <e.alex.simplecharts.DrawView
+            android:id="@+id/DrawView"
+            android:layout_width="1dp"
+            android:layout_height="400dp">
+
+            <TextView
+                android:id="@+id/tv_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charts Charts"></TextView>
+
+        </e.alex.simplecharts.DrawView>
+
+
+    </e.alex.simplecharts.MyScrollView>
+
+    <e.alex.simplecharts.ScrollerLayout
+        android:id="@+id/ScrollerLayaout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="408dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <e.alex.simplecharts.MyScrollBar
+            android:id="@+id/ScrollBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="408dp"
+            android:background="#70676767"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"></e.alex.simplecharts.MyScrollBar>
+    </e.alex.simplecharts.ScrollerLayout>
+
+</android.support.constraint.ConstraintLayout>
