@@ -132,11 +132,9 @@ public class Chart implements Serializable {
 
         @Override
         public String toString() {
-
             String valuesStr = values.stream().map(n -> String.valueOf(n)).collect(Collectors.joining(","));
-
+            
             return "['" + label + "'," + valuesStr + "]";
-
         }
     }
 }
