@@ -51,22 +51,15 @@ public class MainActivity extends Activity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.main_layout);
-
         ConstraintLayout rootLayout = (ConstraintLayout) findViewById(R.id.root);
         mainLayaout = rootLayout;
 
-
         drawView = (DrawView) findViewById(R.id.DrawView);
-
-        //IT'S OMNIPOTENT(EXTRA IMPORTANT)
-        drawView.setBackgroundColor(Color.GRAY);
+        drawView.setBackgroundColor(Color.GRAY); //IT'S OMNIPOTENT(EXTRA IMPORTANT)
 
         myScrollView = (MyScrollView) findViewById(R.id.MyScrollView);
         scrollerLayout = (ScrollerLayout) findViewById(R.id.ScrollerLayaout);
-        scrollerLayout.setScrollerView(myScrollView);
-
         myScrollBar = (MyScrollBar) findViewById(R.id.ScrollBar);
 
 //        myScrollView.setVerticalScrollBarEnabled(false);
@@ -87,7 +80,6 @@ public class MainActivity extends Activity{
                                            String permissions[], int[] grantResults) {
         switch (requestCode) {
             case 1: {
-
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
