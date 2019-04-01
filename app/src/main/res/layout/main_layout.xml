@@ -8,13 +8,14 @@
 
     <e.alex.simplecharts.MyScrollView
         android:id="@+id/MyScrollView"
+        android:fillViewport="true"
         android:layout_width="wrap_content"
         android:layout_height="400dp">
 
         <e.alex.simplecharts.DrawView
             android:id="@+id/DrawView"
-            android:layout_width="1dp"
-            android:layout_height="400dp">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
             <TextView
                 android:id="@+id/tv_long"
