@@ -1,4 +1,4 @@
-package e.alex.simplecharts.сharts;
+package e.alex.simplecharts;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -8,9 +8,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.hamcrest.Matchers.equalTo;
-
 import e.alex.simplecharts.charts.Chart;
+
+import static org.hamcrest.Matchers.equalTo;
 
 public class EqualsAndHashcodeTest {
 

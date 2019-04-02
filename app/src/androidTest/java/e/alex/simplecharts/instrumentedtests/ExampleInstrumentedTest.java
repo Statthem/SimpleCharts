@@ -1,4 +1,4 @@
-package e.alex.simplecharts;
+package e.alex.simplecharts.instrumentedtests;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

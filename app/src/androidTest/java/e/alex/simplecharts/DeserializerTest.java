@@ -1,20 +1,14 @@
-package e.alex.simplecharts.сharts;
+package e.alex.simplecharts;
 
 
-import org.json.JSONException;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
-import static org.hamcrest.Matchers.equalTo;
 
 import e.alex.simplecharts.charts.Chart;
 import e.alex.simplecharts.charts.Deserializer;

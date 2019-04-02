@@ -8,19 +8,22 @@
 
     <e.alex.simplecharts.MyScrollView
         android:id="@+id/MyScrollView"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp">
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <e.alex.simplecharts.DrawView
             android:id="@+id/DrawView"
-            android:layout_width="1dp"
-            android:layout_height="400dp">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
             <TextView
                 android:id="@+id/tv_long"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Charts Charts"></TextView>
+                android:text=" Charts Charts Charts Charts Charts "></TextView>
 
         </e.alex.simplecharts.DrawView>
 
