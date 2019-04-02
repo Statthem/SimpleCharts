@@ -62,11 +62,6 @@ public class MainActivity extends Activity{
         scrollerLayout = (ScrollerLayout) findViewById(R.id.ScrollerLayaout);
         myScrollBar = (MyScrollBar) findViewById(R.id.ScrollBar);
 
-//        myScrollView.setVerticalScrollBarEnabled(false);
-//        myScrollView.setHorizontalScrollBarEnabled(false);
-
-
-
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(200, 200);
         myScrollBar.setLayoutParams(layoutParams);
         myScrollBar.setOnTouchListener(new MyOnTouchListener());
