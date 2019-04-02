@@ -32,6 +32,7 @@ public class DrawView extends FrameLayout{
     private void init() {
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(8);
+        paint.setAntiAlias(true);
 
         Deserializer deserializer = new Deserializer();
 
@@ -66,11 +67,21 @@ public class DrawView extends FrameLayout{
     }
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+    {
+
+        int width = 8000;
+        int height = 800; // Since 3000 is bottom of last Rect to be drawn added and 50 for padding.
+        setMeasuredDimension(width, height);
+    }
+
+    @Override
     public void onDraw(Canvas canvas) {
         Log.i("DrawView", "onDraw");
-        this.setLayoutParams(new FrameLayout.LayoutParams(400, 400));
-        canvas.drawLine(0, 0, 400, 400, paint);
-        canvas.drawLine(400, 0, 0, 400, paint);
+
+       // this.setLayoutParams(new FrameLayout.LayoutParams(8000, 400));
+        canvas.drawLine(0, 0, 8000, 400, paint);
+        canvas.drawLine(8000, 0, 0, 400, paint);
 
 
     }

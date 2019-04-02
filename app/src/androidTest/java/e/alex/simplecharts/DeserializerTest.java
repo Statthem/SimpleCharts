@@ -1,4 +1,4 @@
-package e.alex.simplecharts.unittests;
+package e.alex.simplecharts;
 
 
 

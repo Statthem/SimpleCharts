@@ -56,10 +56,11 @@ public class MainActivity extends Activity{
         mainLayaout = rootLayout;
 
         drawView = (DrawView) findViewById(R.id.DrawView);
-        drawView.setBackgroundColor(Color.GRAY); //IT'S OMNIPOTENT(EXTRA IMPORTANT)
+        drawView.setBackgroundColor(Color.WHITE); //IT'S OMNIPOTENT(EXTRA IMPORTANT)
 
         myScrollView = (MyScrollView) findViewById(R.id.MyScrollView);
         scrollerLayout = (ScrollerLayout) findViewById(R.id.ScrollerLayaout);
+        scrollerLayout.setScrollerView(myScrollView);
         myScrollBar = (MyScrollBar) findViewById(R.id.ScrollBar);
 
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(200, 200);
